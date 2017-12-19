@@ -2,9 +2,86 @@ $font-helvetica: Helvetica, sans-serif;
 $menu-color : #677575;
 $medio-color : #333333;
 
-.float_right
+
+.footer
 {
-	float:right;
+	width: 750px;
+	margin: 70px auto auto auto;
+	height: 210px;
+
+	h3
+	{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p
+	{
+		font-size: 14px;
+	}
+
+	.contacto
+	{
+		width: 205px;
+		float: left;
+	}
+	.suscribete
+	{
+		width: 350px;
+		float: right;
+		margin-right: 120px;
+	}
+}
+
+.medio_plomo
+{
+	height: 308px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fafafa;
+	color: $medio-color;
+
+	h3
+	{
+		width: 376px !important;
+		margin: 77px auto auto auto !important;
+	}
+
+	.visible-xs
+	{
+		.parrafo_inicial
+		{
+			margin-top:25px;
+			width: 450px;
+		}
+	}
+	.hidden-xs
+	{
+		.parrafo_inicial
+		{
+			margin-top:25px;
+			width: 750px;
+		}
+	}
+
+	.parrafo_final
+	{
+		margin:15px auto auto auto;
+		font-size:15px;
+		width: 232px;
+	}
+	
+
+	.medio_plomo_boton
+	{
+		margin:15px auto auto auto;
+		width: 120px;
+
+		button
+		{
+			height: 50px;
+			width: 120px;
+		}
+	}
 }
 
 .medio
@@ -14,14 +91,13 @@ $medio-color : #333333;
 	font-family: $font-helvetica;
 	color: $medio-color;
 
-
 	.visible-xs
 	{
 		h3
 		{
 			width: 524px;
 		    margin: auto;
-		    font-size: 19px;
+		    font-size: 16px;
 		    font-weight: bold;
 		    text-align: center;
 		}
@@ -136,7 +212,9 @@ $medio-color : #333333;
 
 .padding_fuera
 {
-	padding-left:0px !important;
+	padding-left: 0px !important;
+	overflow: hidden !important;
+	padding-right: 0px !important;
 }
 
 .menu_visible_md
