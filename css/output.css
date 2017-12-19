@@ -1,23 +1,108 @@
-.padding_fuera {
-  padding-left: 0px !important;
-  padding-right: 0px !important; }
-
 .float_right {
   float: right; }
 
+.medio {
+  padding-top: 51px;
+  margin-top: 77px;
+  font-family: Helvetica, sans-serif;
+  color: #333333; }
+  .medio .visible-xs h3 {
+    width: 524px;
+    margin: auto;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center; }
+  .medio .visible-xs p {
+    width: 505px;
+    margin: 26px auto auto auto;
+    font-size: 12px;
+    text-align: center; }
+  .medio h3 {
+    width: 685px;
+    margin: auto;
+    font-size: 19.4px;
+    font-weight: bold; }
+  .medio p {
+    width: 685px;
+    margin: 26px auto auto auto;
+    font-size: 12px;
+    text-align: center; }
+  .medio img {
+    margin: 35px auto auto auto;
+    height: auto;
+    width: 345px;
+    display: block; }
+
+.caja_eslogan {
+  z-index: 0;
+  padding-top: 65px; }
+  .caja_eslogan .normal_h3 h3 {
+    margin: auto;
+    color: white;
+    text-align: center;
+    width: 704px;
+    font-size: 38px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 7px; }
+  .caja_eslogan .medio_h3 h3 {
+    margin: auto;
+    color: white;
+    text-align: center;
+    width: 704px;
+    font-size: 38px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 7px; }
+  .caja_eslogan .pequeno_h3 h3 {
+    margin: 85px auto auto auto;
+    color: white;
+    text-align: center;
+    width: 548px;
+    font-size: 32px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 7px; }
+
+.caja_eslogan_botones {
+  margin: auto;
+  width: 272px;
+  padding-top: 43px; }
+  .caja_eslogan_botones .btn-success {
+    margin-left: 11px;
+    width: 103px;
+    height: 47px; }
+  .caja_eslogan_botones .btn-primary {
+    width: 154px;
+    height: 47px; }
+
+.texto_resena_header {
+  text-align: center;
+  color: white;
+  font-family: Helvetica, sans-serif; }
+  .texto_resena_header .visible-xs {
+    width: 480px;
+    margin: 15px auto auto auto; }
+  .texto_resena_header .hidden-xs {
+    width: 655px;
+    margin: 15px auto auto auto; }
+
+.padding_fuera {
+  padding-left: 0px !important; }
+
 .menu_visible_md {
-  padding-top: 30px; }
+  padding-top: 30px;
+  display: flow-root; }
 
 .header_contenedor_menu {
-  z-index: 1;
-  margin-left: 15px; }
+  z-index: 1; }
   .header_contenedor_menu a {
     color: #677575;
     font-family: Helvetica, sans-serif; }
 
 .navegador_pequeno {
-  background-color: #181818b3;
-  border-color: #333; }
+  background-color: #181818e6;
+  border-color: #333;
+  z-index: 1;
+  position: absolute;
+  width: 87%; }
   .navegador_pequeno .navbar-brand {
     padding-top: 10px; }
 
@@ -31,9 +116,9 @@
   top: 0px;
   left: 0px;
   width: 1300px;
-  height: 510px !important;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+  height: 510px !important; }
 
 .slider_cargador {
   position: absolute;

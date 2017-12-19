@@ -1,29 +1,153 @@
 $font-helvetica: Helvetica, sans-serif;
-$negro-light-color: #333;
-$blanco-color: white;
-$negro-color: black;
 $menu-color : #677575;
-
-.padding_fuera
-{
-	padding-left:0px !important;
-	padding-right:0px !important;
-}
+$medio-color : #333333;
 
 .float_right
 {
 	float:right;
 }
 
+.medio
+{
+	padding-top: 51px;
+	margin-top: 77px;
+	font-family: $font-helvetica;
+	color: $medio-color;
+
+
+	.visible-xs
+	{
+		h3
+		{
+			width: 524px;
+		    margin: auto;
+		    font-size: 19px;
+		    font-weight: bold;
+		    text-align: center;
+		}
+		p
+		{
+			width: 505px;
+			margin: 26px auto auto auto;
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+
+	h3
+	{
+		width: 685px;
+		margin: auto;
+		font-size: 19.4px;
+		font-weight: bold;
+		
+	}
+	p
+	{
+		width: 685px;
+		margin: 26px auto auto auto;
+		font-size: 12px;
+		text-align: center;
+	}
+
+	img
+	{
+		margin: 35px auto auto auto;
+		height: auto;
+		width: 345px;
+		display: block;
+	}
+}
+
+.caja_eslogan
+{
+	z-index:0;
+	padding-top:65px;
+
+	.normal_h3 h3
+	{
+		margin: auto;
+	    color: white;
+	    text-align: center;
+	    width: 704px;
+	    font-size: 38px;
+	    font-family: $font-helvetica;
+	    letter-spacing: 7px;
+	}
+	.medio_h3 h3
+	{
+		margin: auto;
+	    color: white;
+	    text-align: center;
+	    width: 704px;
+	    font-size: 38px;
+	    font-family: $font-helvetica;
+	    letter-spacing: 7px;
+	}
+	.pequeno_h3 h3
+	{
+		margin: 85px auto auto auto;
+	    color: white;
+	    text-align: center;
+	    width: 548px;
+	    font-size: 32px;
+	    font-family: $font-helvetica;
+	    letter-spacing: 7px;
+	}
+}
+
+.caja_eslogan_botones
+{
+	margin: auto;
+	width: 272px;
+	padding-top: 43px;
+
+	.btn-success
+	{
+		margin-left: 11px;
+		width: 103px;
+		height: 47px;
+	}
+
+	.btn-primary
+	{
+		width: 154px;
+		height: 47px;
+	}
+}
+
+.texto_resena_header
+{
+	text-align: center;
+	color: white;
+	font-family: $font-helvetica;
+
+	.visible-xs
+	{
+		width: 480px;
+		margin: 15px auto auto auto;
+	}
+	.hidden-xs
+	{
+		width: 655px;
+		margin: 15px auto auto auto;
+	}
+}
+
+.padding_fuera
+{
+	padding-left:0px !important;
+}
+
 .menu_visible_md
 {
 	padding-top: 30px;
+	display: flow-root;
 }
 
 .header_contenedor_menu
 {
 	z-index: 1;
-	margin-left: 15px;
 
 	a
 	{
@@ -35,8 +159,11 @@ $menu-color : #677575;
 
 .navegador_pequeno
 {
-	background-color: #181818b3;
+	background-color: #181818e6;
 	border-color: #333;
+	z-index: 1;
+	position: absolute;
+	width: 87%;
 
 	.navbar-brand
 	{
@@ -58,9 +185,9 @@ $menu-color : #677575;
 	top:0px;
 	left:0px;
 	width:1300px;
-	height:510px !important;
 	overflow:hidden;
 	visibility:hidden;
+	height:510px !important;
 }
 
 .slider_cargador
