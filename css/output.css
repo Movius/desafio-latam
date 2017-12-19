@@ -2,6 +2,29 @@
   padding-left: 0px !important;
   padding-right: 0px !important; }
 
+.float_right {
+  float: right; }
+
+.menu_visible_md {
+  padding-top: 30px; }
+
+.header_contenedor_menu {
+  z-index: 1;
+  margin-left: 15px; }
+  .header_contenedor_menu a {
+    color: #677575;
+    font-family: Helvetica, sans-serif; }
+
+.navegador_pequeno {
+  background-color: #181818b3;
+  border-color: #333; }
+  .navegador_pequeno .navbar-brand {
+    padding-top: 10px; }
+
+.slider_contenedor_header {
+  position: absolute;
+  z-index: 0; }
+
 .slider_contenedor {
   position: relative;
   margin: 0 auto;

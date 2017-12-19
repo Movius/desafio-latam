@@ -8,19 +8,13 @@ var jssor_1_SlideoTransitions = [
 
 var jssor_1_options = {
   $AutoPlay: 1,
-  $SlideDuration: 800,
+  $SlideDuration: 2500,
   $SlideEasing: $Jease$.$OutQuint,
   $Cols: 1,
   $Align: 0,
   $CaptionSliderOptions: {
     $Class: $JssorCaptionSlideo$,
     $Transitions: jssor_1_SlideoTransitions
-  },
-  $ArrowNavigatorOptions: {
-    $Class: $JssorArrowNavigator$
-  },
-  $BulletNavigatorOptions: {
-    $Class: $JssorBulletNavigator$
   }
 };
 

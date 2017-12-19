@@ -2,11 +2,52 @@ $font-helvetica: Helvetica, sans-serif;
 $negro-light-color: #333;
 $blanco-color: white;
 $negro-color: black;
+$menu-color : #677575;
 
 .padding_fuera
 {
 	padding-left:0px !important;
 	padding-right:0px !important;
+}
+
+.float_right
+{
+	float:right;
+}
+
+.menu_visible_md
+{
+	padding-top: 30px;
+}
+
+.header_contenedor_menu
+{
+	z-index: 1;
+	margin-left: 15px;
+
+	a
+	{
+		color: $menu-color;
+		font-family: $font-helvetica;
+	}
+
+}
+
+.navegador_pequeno
+{
+	background-color: #181818b3;
+	border-color: #333;
+
+	.navbar-brand
+	{
+		padding-top: 10px;
+	}
+}
+
+.slider_contenedor_header
+{
+	position: absolute;
+	z-index: 0;
 }
 
 
