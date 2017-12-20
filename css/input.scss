@@ -1,304 +1,201 @@
-$font-helvetica: Helvetica, sans-serif;
-$menu-color : #677575;
-$medio-color : #333333;
-
-
-.footer
-{
-	width: 750px;
-	margin: 70px auto auto auto;
-	height: 210px;
-
-	h3
-	{
-		font-size: 15px;
-		font-weight: bold;
-	}
-	p
-	{
-		font-size: 14px;
-	}
-
-	.contacto
-	{
-		width: 205px;
-		float: left;
-	}
-	.suscribete
-	{
-		width: 350px;
-		float: right;
-		margin-right: 120px;
-	}
-}
-
-.medio_plomo
-{
-	height: 308px;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	background: #fafafa;
-	color: $medio-color;
-
-	h3
-	{
-		width: 376px !important;
-		margin: 77px auto auto auto !important;
-	}
-
-	.visible-xs
-	{
-		.parrafo_inicial
-		{
-			margin-top:25px;
-			width: 450px;
-		}
-	}
-	.hidden-xs
-	{
-		.parrafo_inicial
-		{
-			margin-top:25px;
-			width: 750px;
-		}
-	}
-
-	.parrafo_final
-	{
-		margin:15px auto auto auto;
-		font-size:15px;
-		width: 232px;
-	}
-	
-
-	.medio_plomo_boton
-	{
-		margin:15px auto auto auto;
-		width: 120px;
-
-		button
-		{
-			height: 50px;
-			width: 120px;
-		}
-	}
-}
-
-.medio
-{
-	padding-top: 51px;
-	margin-top: 77px;
-	font-family: $font-helvetica;
-	color: $medio-color;
-
-	.visible-xs
-	{
-		h3
-		{
-			width: 524px;
-		    margin: auto;
-		    font-size: 16px;
-		    font-weight: bold;
-		    text-align: center;
-		}
-		p
-		{
-			width: 505px;
-			margin: 26px auto auto auto;
-			font-size: 12px;
-			text-align: center;
-		}
-	}
-
-	h3
-	{
-		width: 685px;
-		margin: auto;
-		font-size: 19.4px;
-		font-weight: bold;
-		
-	}
-	p
-	{
-		width: 685px;
-		margin: 26px auto auto auto;
-		font-size: 12px;
-		text-align: center;
-	}
-
-	img
-	{
-		margin: 35px auto auto auto;
-		height: auto;
-		width: 345px;
-		display: block;
-	}
-}
-
-.caja_eslogan
-{
-	z-index:0;
-	padding-top:65px;
-
-	.normal_h3 h3
-	{
-		margin: auto;
-	    color: white;
-	    text-align: center;
-	    width: 704px;
-	    font-size: 38px;
-	    font-family: $font-helvetica;
-	    letter-spacing: 7px;
-	}
-	.medio_h3 h3
-	{
-		margin: auto;
-	    color: white;
-	    text-align: center;
-	    width: 704px;
-	    font-size: 38px;
-	    font-family: $font-helvetica;
-	    letter-spacing: 7px;
-	}
-	.pequeno_h3 h3
-	{
-		margin: 85px auto auto auto;
-	    color: white;
-	    text-align: center;
-	    width: 548px;
-	    font-size: 32px;
-	    font-family: $font-helvetica;
-	    letter-spacing: 7px;
-	}
-}
-
-.caja_eslogan_botones
-{
-	margin: auto;
-	width: 272px;
-	padding-top: 43px;
-
-	.btn-success
-	{
-		margin-left: 11px;
-		width: 103px;
-		height: 47px;
-	}
-
-	.btn-primary
-	{
-		width: 154px;
-		height: 47px;
-	}
-}
-
-.texto_resena_header
-{
-	text-align: center;
-	color: white;
-	font-family: $font-helvetica;
-
-	.visible-xs
-	{
-		width: 480px;
-		margin: 15px auto auto auto;
-	}
-	.hidden-xs
-	{
-		width: 655px;
-		margin: 15px auto auto auto;
-	}
-}
-
-.padding_fuera
-{
-	padding-left: 0px !important;
-	overflow: hidden !important;
-	padding-right: 0px !important;
-}
-
-.menu_visible_md
-{
-	padding-top: 30px;
-	display: flow-root;
-}
-
-.header_contenedor_menu
-{
-	z-index: 1;
-
-	a
-	{
-		color: $menu-color;
-		font-family: $font-helvetica;
-	}
-
-}
-
-.navegador_pequeno
-{
-	background-color: #181818e6;
-	border-color: #333;
-	z-index: 1;
-	position: absolute;
-	width: 87%;
-
-	.navbar-brand
-	{
-		padding-top: 10px;
-	}
-}
-
-.slider_contenedor_header
-{
-	position: absolute;
-	z-index: 0;
-}
-
-
-.slider_contenedor
-{
-	position:relative;
-	margin:0 auto;
-	top:0px;
-	left:0px;
-	width:1300px;
-	overflow:hidden;
-	visibility:hidden;
-	height:510px !important;
-}
-
-.slider_cargador
-{
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:100%;
+html,body{
 	height:100%;
+}
+header .contenido{
+	padding:40px 0;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:9999;
+}
+.nav a{
+	color:#777;
+}
+.menu-responsive{
+	display:none;
+}
+.menu-trigger{
+	position:relative;
+	z-index:2000;
+	display:none;
+	cursor:pointer;
+	float:right;
+	margin-left:15px;
+}
+.menu-trigger .icon{
+	display:inline-block;
+	width:30px;
+	height:4px;
+	position:relative;
+	top:-8px;
+	background:#fff;
+}
+.menu-trigger .icon:before{
+	content:'';
+	width:100%;
+	height:4px;
+	background:#fff;
+	position:absolute;
+	top:-8px;
+}
+.menu-trigger .icon:after{
+	content:'';
+	width:100%;
+	height:4px;
+	background:#fff;
+	position:absolute;
+	top:8px;
+}
+#banner{
+	position:relative;
+}
+#banner .leyenda{
+	position:absolute;
+	left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+	z-index:9999;
 	text-align:center;
-	background-color:rgba(0,0,0,0.7);
+}
+#banner h1{
+	color:#fff;
+	font-size:50px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	margin-bottom:30px;
+}
+#banner p{
+	color:#fff;
+}
+#banner .caja_eslogan_botones{
+	margin-bottom:12px;
+}
+.medio_plomo{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background:#fafafa;
+	color:#333333;
+	text-align:center;
+	padding:55px 0;
+}
+.medio_plomo h3{
+	font-weight:bold;
+	font-size:20px;
+}
+.medio_plomo .parrafo_final{
+	margin:15px auto auto auto;
+	font-size:15px;
+}
+.medio_plomo .medio_plomo_boton{
+	margin:15px auto auto auto;
+}
+.medio_plomo .medio_plomo_boton button{
+	padding:8px 18px;
+}
+.medio{
+	padding-top:75px;
+	color:#333;
+	text-align:center;
+}
+.medio h3{
+	font-size:19.4px;
+	font-weight:bold; 
+}
+.medio p{
+	margin-top:26px;
+	font-size:12px;
+	margin-bottom:35px;
+}
+.medio .img-responsive{
+	max-width:90%;
+	margin:auto;
+}
+.footer{
+	padding:70px 0;
+}
+.footer h3{
+	font-size:18px;
+}
+.footer p{
+	font-size:14px; 
+}
+.footer .contacto{
+	float:left; 
+}
+.footer .suscribete{
+	float:right;
+}
+.bajada{
+	padding:10px 0;
+	background:#222;
+}
+.bajada p{
+	color:#fff;
+	text-transform:uppercase;
+	margin:0;
 }
 
-.slider_cargador_img
-{
-	margin-top:-19px;
+@media screen and (min-width:300px) and (max-width:1023px){
+.pull-right{
+	float:none !important;
+}	
+#menu{
+	display:none;
+}
+.menu-trigger{
+	display:block;
+	top:35px;
+}
+header .contenido{
 	position:relative;
+	background:#222;
+	padding:20px 0;
+}
+header .contenido{
+	padding:15px 0;
+}
+#banner h1{
+	font-size:22px;
+}
+#banner p{
+	display:none;
+}
+}
+@media screen and (min-width:300px) and (max-width:640px){
+.logo{
+	display:block;
+}
+.footer .contacto{
+	float:none;
+}
+.footer .suscribete{
+	float:none;
+}
+.bajada{
+	text-align:center;
+}
+#banner h1{
+	font-size:15px;
+	margin-bottom:10px;
+}
+#banner .leyenda{
 	top:50%;
-	width:38px;
-	height:38px;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+	left:15px;
+	right:15px;
 }
-
-.slider_img_contenedor
-{
-	cursor:default;
-	position:relative;
-	top:0px;
-	left:0px;
-	width:1300px;
-	height:500px;
-	overflow:hidden;
+.menu-trigger{
+	top:22px;
 }
-
-
-
-
+}
+@media screen and (min-width:300px) and (max-width:320px){
+.caja_eslogan_botones{
+	display:none;
+}
+.menu-trigger{
+	top:18px;
+}
+}
